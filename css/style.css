@@ -1,0 +1,114 @@
+:root{
+    font-size: 100%;
+    font-family: Roboto, sans-serif;
+    --rosa-500: #fec5bb;
+    --rosa-400: #fcd5ce;
+    --rosa-300: #fae1dd;
+    --rosa-200: #f8edeb;
+    
+    --azul-500: #d8e2dc;
+    --azul-400: #e8e8e4;
+
+    --amarelo--300: #ffe8d6;
+    --white-500: rgba(255, 253, 253, 0.863);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--azul-400);
+}
+nav{
+    padding: 0 5rem;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white-500);
+}
+nav figure img{
+    width: 250px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+nav ul a{
+    text-decoration: none;
+    height: 100%;
+    color: black;
+}
+nav ul li{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-content: center;
+    height: 100%;
+    
+    transition: 0.2s;
+}
+nav ul li:hover{
+    background-color: var(--rosa-200);
+}
+main{
+    padding: 60px 5rem 8.5rem;
+}
+.text-container{
+    width: 600px;
+    padding: 3.2rem 0rem 5rem 10rem ;
+}
+.text-container h1{
+    font-size: 3.5rem;
+}
+.text-container h1,.text-container p{
+    padding: 1rem 0rem;
+}
+.text-container p{
+    font-size: 1.2rem;
+}
+.text-container input{
+    padding: 1rem;
+    width: 200px;
+    border: solid 1px blue;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 52px;
+}
+.text-container input:hover{
+    background-color: #dbdad9;
+}
+#developer{
+    position: absolute;
+    top:20%;
+    right: 15%;
+    height: 400px;
+    width: 500px;
+    z-index: -1;
+}
+#about{
+    background-color: #bbbbbb31;
+    padding: 5rem 10rem;
+}
+#about h1{
+    font-size: 5rem;
+}
+#about p{
+    font-size: 1.5rem;
+    padding-top: 80px;
+    width: 700px;
+}
+.img-perfil{
+    width: 350px;
+    float: right;
+    border: solid 10px var(--white-500);
+}
