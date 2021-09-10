@@ -490,3 +490,11 @@ nav figure img{
   width: 200px;
 }
 }
+@media (max-width:400px){
+  nav figure img{
+    width: 150px;
+  }
+  nav{
+    padding: 0rem 1.2rem;
+  }
+}
