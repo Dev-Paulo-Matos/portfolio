@@ -62,6 +62,10 @@ nav ul li {
 
   transition: 0.2s;
 }
+.mini-page a{
+  text-decoration: none;
+  color: black;
+}
 nav ul li:hover {
   background-color: var(--rosa-200);
 }
@@ -152,7 +156,7 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-.container{
+.mini-page{
     width: 282px;
     padding: 1rem;
     border-radius: 10px;
@@ -161,15 +165,15 @@ main {
     margin: 10px 10px;
     transition: 0.2s;
 }
-.container:hover{
+.mini-page:hover{
     box-shadow: 0px 0px 12px 1px black;
     transform: scale(1.05);
 }
-.container img{
+.mini-page img{
     width: 250px;
     border-radius: 10px;
 }
-.container h2{
+.mini-page h2{
     padding-top: 10px;
     font-size: 2rem;
 }
@@ -302,10 +306,10 @@ main {
   body h1{
     font-size: 3.5rem !important;
   }
-  .container{
+  .mini-page{
     width: 232px;
   }
-  .container img{
+  .mini-page img{
     width: 200px;
   }
   #works{
@@ -495,6 +499,6 @@ nav figure img{
     width: 150px;
   }
   nav{
-    padding: 0rem 1.2rem;
+    padding: 0rem 1rem;
   }
 }
