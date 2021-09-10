@@ -26,6 +26,9 @@ a{
     text-decoration: none;
     color: black;
 }
+#checkbox-menu{
+  display: none;
+}
 nav {
   padding: 0 5rem;
   display: flex;
@@ -112,9 +115,13 @@ main {
   padding-top: 80px;
   width: 700px;
 }
+#about div{
+    padding: 1rem 0rem;
+}
 .img-perfil {
   width: 350px;
   float: right;
+  z-index: 3;
   border: solid 10px var(--white-500);
 }
 #circle-relogio {
@@ -196,15 +203,14 @@ main {
     padding-bottom: 1rem;
 }
 .text-form label{
-   
-    padding-top: 1.2rem;
+  padding-top: 1.2rem;
 
 }
 .text-form label:nth-child(2){
-    padding-left: 10px;
+  padding-left: 10px;
 }
 .text-form label input{
-     width: 245px;
+  width: 245px;
 }
 #message{
     width: 500px;
@@ -213,13 +219,19 @@ main {
 #submit{
     margin-top: 10px;
     padding: 10px;
-
+    width: 200px;
+    background: #d8e2dc;
+    color: black;
+  border: solid 1px blue;
 }
 #form-svg{
     position: absolute;
     width: 25rem;
     right: 10rem;
     top: 10%;
+}
+.checkbox-menu{
+  display: none;
 }
 @keyframes relogio {
   0% {
@@ -244,4 +256,237 @@ main {
   100%{
     transform: translate(-200.68641px, -105.38871px);
   }
+}
+
+
+@media (min-width: 1550px) and (max-width:1700px) {
+    :root{
+        font-size: 110%;
+    }
+}
+@media (max-width:1330px) and (min-width:1160px){
+    :root{
+      font-size: 85%;
+    }
+    .text-container p{
+      max-width: 330px;
+    }
+    #about p{
+    width: 550px;
+    }
+    .img-perfil{
+    width:250px;
+  }
+}
+@media (max-width:1159px){
+
+  #developer{
+    width: 300px;
+  }
+  #about p{
+    font-size: 1.2rem;
+    padding-top: 1.2rem;
+    width: 400px;
+  }
+  .img-perfil{
+    width:250px;
+  }
+  #form-svg{
+    display: none;
+  }
+  #contact{
+    display: block;
+    margin: auto;
+
+  }
+  body h1{
+    font-size: 3.5rem !important;
+  }
+  .container{
+    width: 232px;
+  }
+  .container img{
+    width: 200px;
+  }
+  #works{
+    padding: 4rem 4.5rem;
+  }
+  #contact{
+    padding: 10rem 7rem;
+  }
+  
+}
+/*MESA DIGITALIZADORA*/
+
+@media (max-width:1000px){
+  .menu-container{
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .checkbox-menu{
+  position: absolute;
+  opacity: 0;
+  z-index: 7 !important;
+  display: block;
+}
+
+.menu-container label{
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 30px;
+}
+
+label span{
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  background: #f16234;
+  transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1){
+  top: 0;
+}
+
+label span:nth-child(2){
+  top: 8px;
+}
+
+label span:nth-child(3){
+  top: 16px;
+}
+
+
+  .menu ul{
+    display: none;
+  }
+  .menu ul a{
+    width: 100%;
+    text-align: center;
+  }
+  .menu ul a li{
+    width: 100%;
+  }
+  .menu{
+    position: absolute;
+    background-color: rgb(216, 215, 215);
+    height: 100vh;
+    top:0;
+    left: 0;
+    width: 0;
+    transition: 0.2s;
+    
+  }
+ .menu[data-menu='true']{
+  width: 80%;
+  }
+  .menu[data-menu='true'] ul{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  width: 100%;
+  }
+  nav{
+    position: fixed;
+    width: 100vw;
+    z-index: 3;
+  }
+
+  .menu-second{
+    position: absolute;
+    top: 0;
+  }
+  .second-menu-container{
+    display: flex;
+    flex-direction: column;
+  }
+  #developer{
+    display: none;
+  }
+  .text-container{
+    padding-left: 100px;
+  }
+  .text-container a input{
+    margin-top: 50px;
+    
+  }
+  #about{
+    padding: 5rem 3rem;
+  }
+}
+@media (max-width:710px){
+  .text-container{
+    padding-left: 0;
+  }
+  
+  #contact{
+    padding-left: 30px;
+  }
+  #about p{
+    padding-left: 100px;
+    width: auto;
+  }
+  .img-perfil{
+    display: none;
+  }
+  .text-container{
+    width: auto;
+  }
+}
+@media (max-width:600px){
+  .contact h1{
+    font-size: 3rem !important;
+}
+.contact p{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+.contact label input{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    border: solid 1px black;
+    outline: 0;
+}
+#name{
+    width: 100%;
+}
+#formulario{
+    padding: 1rem 2rem;
+
+}
+.text-form{
+    flex-direction: column;
+}
+.text-form label{
+  padding-top: 1.2rem;
+  padding-left: 0 !important;
+}
+.text-form label input{
+  width: 100%;
+  
+}
+#message{
+    width: 300px;
+    height: 150px;
+}
+#submit{
+
+    width: 200px;
+
+}
+#sobre{
+  padding-left: 30px !important;
+}
+nav figure img{
+  width: 200px;
+}
 }

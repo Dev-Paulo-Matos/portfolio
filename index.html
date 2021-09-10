@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,25 +11,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
+
 </head>
+
 <body>
     <div class="page">
         <nav>
             <figure>
                 <img data-aos="fade-down" data-aos-delay="10" src="./assets/text.gif" alt="" srcset="">
             </figure>
-            <ul>
-                <a href="#home"><li data-aos="fade-down" data-aos-delay="200">Home</li></a>
-                <a href="#about"><li data-aos="fade-down" data-aos-delay="400">About</li></a>
-                <a href="#works"><li data-aos="fade-down" data-aos-delay="800">Works</li></a>
-                <a href="#contact"><li data-aos="fade-down" data-aos-delay="600">Contact</li></a>
-            </ul>
+            <div class="menu-container">
+                <input type="checkbox" class="checkbox-menu" data-menu="false">
+                <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="menu" data-menu="false">
+                    <div class="menu-container second-menu-container">
+                        
+                        <ul class="list-links">
+
+                            <a href="#home">
+                                <li data-aos="fade-down" data-aos-delay="200">Home</li>
+                            </a>
+                            <a href="#about">
+                                <li data-aos="fade-down" data-aos-delay="400">About</li>
+                            </a>
+                            <a href="#works">
+                                <li data-aos="fade-down" data-aos-delay="800">Works</li>
+                            </a>
+                            <a href="#contact">
+                                <li data-aos="fade-down" data-aos-delay="600">Contact</li>
+                            </a>
+                        </ul>
+                        
+                    </div>
+                </div>
+
         </nav>
         <main id="home">
 
-            <svg data-aos="fade-left" data-aos-delay="1900" data-aos-offset="400" id="developer" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="798.62718"
-                height="689.22258" viewBox="0 0 798.62718 689.22258">
+            <svg data-aos="fade-left" data-aos-delay="1900" data-aos-offset="400" id="developer" data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg" width="798.62718" height="689.22258"
+                viewBox="0 0 798.62718 689.22258">
                 <title>dev_productivity</title>
                 <circle cx="435.92153" cy="118.40512" r="73.53607" fill="#a0616a" />
                 <path
@@ -62,7 +88,8 @@
                 <path
                     d="M828.38091,510.14529H661.938v-3.43053H586.46634v3.43053h-167.129a11.25861,11.25861,0,0,0-11.25861,11.25861V749.3154a11.25864,11.25864,0,0,0,11.25861,11.25865H828.38091a11.25864,11.25864,0,0,0,11.25861-11.25865V521.4039A11.2586,11.2586,0,0,0,828.38091,510.14529Z"
                     transform="translate(-200.68641 -105.38871)" fill="#3f3d56" />
-                <circle cx="423.50024" cy="484.32605" r="25" fill="none" stroke="#d0cde1" stroke-miterlimit="10" stroke-width="2" />
+                <circle cx="423.50024" cy="484.32605" r="25" fill="none" stroke="#d0cde1" stroke-miterlimit="10"
+                    stroke-width="2" />
                 <circle cx="415.50024" cy="493.32605" r="25" fill="#d0cde1" />
                 <rect x="80.44606" y="661.22258" width="28" height="28" fill="#d0cde1" />
                 <path d="M292.13642,744.6117v34h34v-34Zm32.52,32.52h-31.05v-31.04h31.05Z"
@@ -108,16 +135,18 @@
                     d="M956.43014,744.64381l14.88232-22.1315-14.85188,24.51243.031,2.49035q-1.62969.01242-3.22774-.05428L954.002,717.449l-.02022-.247.02723-.04771.07065-3.02493-16.2979-23.66265,16.27867,21.39867.05777.63938.55752-24.18618-14.077-24.53275,14.11708,20.28394-.14735-50.10752.00032-.16678.00479.164.93446,39.49147,12.8295-16.04146-12.7875,19.44356.28,21.634,11.80578-21.11394-11.76239,24.29451.15587,12.02957,17.16879-29.41146-17.11659,33.60807Z"
                     transform="translate(-200.68641 -105.38871)" fill="#3f3d56" />
             </svg>
-            <div  class="text-container">
+            <div class="text-container">
                 <h1 data-aos="fade-right" data-aos-delay="1200">Portifolio</h1>
-                <p data-aos="fade-right" data-aos-delay="1500">Conheça sobre o desenvolvedor Front-end "<i>Paulo Matos</i>"</p>
+                <p data-aos="fade-right" data-aos-delay="1500">Conheça sobre o desenvolvedor Front-end "<i>Paulo
+                        Matos</i>"</p>
                 <a href="#about"><input data-aos="fade-right" data-aos-delay="1700" type="button" value="Conhecer"></a>
             </div>
         </main>
         <section id="about">
             <h1 data-aos="fade-down" data-aos-offset="300">Sobre</h1>
             <div>
-                <img data-aos="fade-left" data-aos-offset="300" class="img-perfil" src="./assets/1594124477215.jpg" alt="" srcset="">
+                <img data-aos="fade-left" data-aos-offset="300" class="img-perfil" src="./assets/1594124477215.jpg"
+                    alt="" srcset="">
                 <p id="sobre" data-aos="fade-right" data-aos-offset="300">
                     Desenvolvedor Web, com experiência em projetos de metodologia SCRUM,
                     tenho experiência de desenvolvimento em Layouts web, arquitetura de
@@ -126,50 +155,50 @@
                     para desenvolver e adquirir mais habilidades no mercado de trabalho
 
                 </p>
-                
+
             </div>
         </section>
         <section id="works">
             <h1>Works</h1>
-            
+
             <div class="works">
                 <div class="container">
                     <a href="https://dev-paulo-matos.github.io/FUDU/">
-                    <img src="./assets/fudu.jpeg" alt="">
-                    <h2>Fudu</h2>
-    </a>
-                    
+                        <img src="./assets/fudu.jpeg" alt="">
+                        <h2>Fudu</h2>
+                    </a>
+
                 </div>
-                
+
                 <div class="container">
                     <a href="https://dev-paulo-matos.github.io/StreamAnime/">
-                    <img src="./assets/anime.jpeg" alt="">
-                    <h2>StreamAnime</h2>
+                        <img src="./assets/anime.jpeg" alt="">
+                        <h2>StreamAnime</h2>
                     </a>
                 </div>
                 <div class="container">
                     <a href="https://dev-paulo-matos.github.io/instagram-page/">
-                    <img src="./assets/instagram.jpeg" alt="">
-                    <h2>Instagram</h2>
+                        <img src="./assets/instagram.jpeg" alt="">
+                        <h2>Instagram</h2>
                     </a>
                 </div>
                 <div class="container">
                     <a href="https://dev-paulo-matos.github.io/game-snake/index.html">
-                    <img src="./assets/snake.jpeg" alt="">
-                    <h2>Snake</h2>
+                        <img src="./assets/snake.jpeg" alt="">
+                        <h2>Snake</h2>
                     </a>
                 </div>
                 <div class="container">
                     <a href="https://dev-paulo-matos.github.io/recriando_Interface_netflix/">
-                    <img src="./assets/netflix.jpeg" alt="">
-                    <h2>Netflix</h2>
+                        <img src="./assets/netflix.jpeg" alt="">
+                        <h2>Netflix</h2>
                     </a>
                 </div>
             </div>
         </section>
-        <section  id="contact" class="contact">
-            <svg  id="form-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="883.70798" height="724.22538"
-                viewBox="0 0 883.70798 724.22538">
+        <section id="contact" class="contact">
+            <svg id="form-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="883.70798"
+                height="724.22538" viewBox="0 0 883.70798 724.22538">
                 <path
                     d="M815.4375,655.50781H541.437a16.519,16.519,0,0,1-16.5-16.5V442.00732a16.51868,16.51868,0,0,1,16.5-16.5H815.4375a16.519,16.519,0,0,1,16.5,16.5V639.00781A16.51929,16.51929,0,0,1,815.4375,655.50781Z"
                     transform="translate(-157.896 -87.88731)" fill="#e6e6e6" />
@@ -185,9 +214,11 @@
                 <path
                     d="M778.91936,496.98053H610.36852a6.01968,6.01968,0,1,0,0,12.03936H778.91936a6.01968,6.01968,0,0,0,0-12.03936Z"
                     transform="translate(-157.896 -87.88731)" fill="#e6e6e6" />
-                <path d="M610.36852,534.02466a6.01968,6.01968,0,1,0,0,12.03936H778.91936a6.01968,6.01968,0,0,0,0-12.03936Z"
+                <path
+                    d="M610.36852,534.02466a6.01968,6.01968,0,1,0,0,12.03936H778.91936a6.01968,6.01968,0,0,0,0-12.03936Z"
                     transform="translate(-157.896 -87.88731)" fill="#e6e6e6" />
-                <path d="M610.36852,571.06885a6.01968,6.01968,0,1,0,0,12.03936H778.91936a6.01968,6.01968,0,0,0,0-12.03936Z"
+                <path
+                    d="M610.36852,571.06885a6.01968,6.01968,0,1,0,0,12.03936H778.91936a6.01968,6.01968,0,0,0,0-12.03936Z"
                     transform="translate(-157.896 -87.88731)" fill="#e6e6e6" />
                 <circle cx="420.52193" cy="415.57596" r="7.40884" fill="#6c63ff" />
                 <circle cx="420.52193" cy="452.62009" r="7.40884" fill="#e6e6e6" />
@@ -196,13 +227,16 @@
                     d="M711.77684,503.00018h0a6.01961,6.01961,0,0,1-6.01965,6.01965H610.58538a6.167,6.167,0,0,1-6.18439-5.21972,6.03031,6.03031,0,0,1,5.96753-6.81964h95.38867a6.01966,6.01966,0,0,1,6.01965,6.01965Z"
                     transform="translate(-157.896 -87.88731)" fill="#6c63ff" />
                 <circle cx="520.54113" cy="288.23669" r="24.07867" fill="#e6e6e6" />
-                <circle cx="678.43713" cy="376.12401" r="12.03934" transform="translate(40.60032 897.66513) rotate(-80.78253)"
-                    fill="#fff" />
-                <path d="M198.9668,270.31231a5.96564,5.96564,0,1,0,0,11.93128H423.82524a5.96564,5.96564,0,1,0,0-11.93128Z"
+                <circle cx="678.43713" cy="376.12401" r="12.03934"
+                    transform="translate(40.60032 897.66513) rotate(-80.78253)" fill="#fff" />
+                <path
+                    d="M198.9668,270.31231a5.96564,5.96564,0,1,0,0,11.93128H423.82524a5.96564,5.96564,0,1,0,0-11.93128Z"
                     transform="translate(-157.896 -87.88731)" fill="#e6e6e6" />
-                <path d="M198.9668,307.02389a5.96564,5.96564,0,1,0,0,11.93128H423.82524a5.96564,5.96564,0,0,0,0-11.93128Z"
+                <path
+                    d="M198.9668,307.02389a5.96564,5.96564,0,1,0,0,11.93128H423.82524a5.96564,5.96564,0,0,0,0-11.93128Z"
                     transform="translate(-157.896 -87.88731)" fill="#e6e6e6" />
-                <path d="M299.46477,345.57107a5.96564,5.96564,0,0,0,0,11.93128h23.86249a5.96564,5.96564,0,0,0,0-11.93128Z"
+                <path
+                    d="M299.46477,345.57107a5.96564,5.96564,0,0,0,0,11.93128h23.86249a5.96564,5.96564,0,0,0,0-11.93128Z"
                     transform="translate(-157.896 -87.88731)" fill="#6c63ff" />
                 <path
                     d="M279.42037,194.562a1.83739,1.83739,0,0,0-1.83557,1.83557v46.59619a1.83739,1.83739,0,0,0,1.83557,1.83557h63.95129a1.83739,1.83739,0,0,0,1.83557-1.83557V196.39755a1.83739,1.83739,0,0,0-1.83557-1.83557Z"
@@ -217,11 +251,13 @@
                     transform="translate(-157.896 -87.88731)" fill="#fff" />
                 <circle cx="153.50003" cy="23.86253" r="23.86253" fill="#e6e6e6" />
                 <circle cx="153.50003" cy="23.86253" r="11.93126" fill="#6c63ff" />
-                <polygon points="748.119 711.24 736.687 711.239 731.25 667.143 748.123 667.145 748.119 711.24" fill="#ffb8b8" />
+                <polygon points="748.119 711.24 736.687 711.239 731.25 667.143 748.123 667.145 748.119 711.24"
+                    fill="#ffb8b8" />
                 <path
                     d="M728.52095,707.97276h22.04782a0,0,0,0,1,0,0v13.88195a0,0,0,0,1,0,0H714.639a0,0,0,0,1,0,0v0A13.88193,13.88193,0,0,1,728.52095,707.97276Z"
                     fill="#2f2e41" />
-                <polygon points="809.741 711.24 798.308 711.239 792.872 667.143 809.745 667.145 809.741 711.24" fill="#ffb8b8" />
+                <polygon points="809.741 711.24 798.308 711.239 792.872 667.143 809.745 667.145 809.741 711.24"
+                    fill="#ffb8b8" />
                 <path
                     d="M790.14219,707.97276H812.19a0,0,0,0,1,0,0v13.88195a0,0,0,0,1,0,0H776.26026a0,0,0,0,1,0,0v0A13.88193,13.88193,0,0,1,790.14219,707.97276Z"
                     fill="#2f2e41" />
@@ -247,29 +283,26 @@
                 <path
                     d="M906.27914,501.059l0,0a12.08365,12.08365,0,0,1,16.29393,13.17809l-7.8391,48.991a47.876,47.876,0,0,1-10.26518,22.80676L879.00934,617.059a4,4,0,0,1-6.06459.13914l-6.04745-6.71587a4,4,0,0,1-.196-5.11814l1.7811-2.31141a134.70322,134.70322,0,0,0,27.04466-66.179l3.11643-25.98472A12.08364,12.08364,0,0,1,906.27914,501.059Z"
                     transform="translate(-157.896 -87.88731)" fill="#6c63ff" />
-                <path d="M1040.604,812.11269h-258a1,1,0,0,1,0-2h258a1,1,0,0,1,0,2Z" transform="translate(-157.896 -87.88731)"
-                    fill="#ccc" />
+                <path d="M1040.604,812.11269h-258a1,1,0,0,1,0-2h258a1,1,0,0,1,0,2Z"
+                    transform="translate(-157.896 -87.88731)" fill="#ccc" />
             </svg>
-            <h1 data-aos="fade-right" >Entre em Contato!</h1>
-            <p data-aos="fade-right" >Preencha o formulario para enviar um email!</p>
-            
-            <form data-aos="fade-right"  id="formulario" action="">
+            <h1 data-aos="fade-right">Entre em Contato!</h1>
+            <p data-aos="fade-right">Preencha o formulario para enviar um email!</p>
+
+            <form data-aos="fade-right" id="formulario" action="">
+
+                <label for="name">Nome: <br><input placeholder="Digite seu nome" id="name" type="text"></label>
+                <div class="text-form">
+                    <label for="email">Email:<br> <input placeholder="Digite seu email" id="email" type="email"></label>
+                    <label for="check-email">Confirme o Email:<br> <input placeholder="Confirme seu Email"
+                            id="check-email" type="email"></label>
+                </div>
                 
-                <label  for="name" >Nome: <br><input placeholder="Digite seu nome" id="name" type="text"></label>
-                <div class="text-form">
-                    <label for="email">Email:<br> <input placeholder="Digite seu email" id="email"  type="email"></label>
-                    <label  for="check-email">Confirme o Email:<br> <input placeholder="Confirme seu Email" id="check-email" type="email"></label>
-                </div>
-                <div class="text-form">
-                    <label for="passowrd">Senha:<br> <input placeholder="Digite seu Password" id="password" type="password"></label>
-                    <label for="check-password">Confirme a Senha:<br> <input placeholder="Confirme seu Password" id="check-password"
-                            type="password"></label>
-                </div>
-                <label   for="message">Mensagem:<br> <textarea id="message"></textarea></label>
+                <label for="message">Mensagem:<br> <textarea id="message"></textarea></label>
                 <br>
                 <input id="submit" type="button" value="Enviar">
             </form>
-            
+
         </section>
         <footer>
 
@@ -279,5 +312,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="./js/app.js"></script>
 </body>
+
 </html>
